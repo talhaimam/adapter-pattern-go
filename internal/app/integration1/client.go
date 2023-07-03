@@ -5,6 +5,14 @@ import (
 	"net/url"
 )
 
+type IntegrationAdapter struct {
+	integration Integration
+}
+
+func NewIntegrationAdapter(integration Integration) *IntegrationAdapter {
+	return &IntegrationAdapter{integration}
+}
+
 func (studio *Integration1) FetchClasses(url url.URL) {
 	fmt.Println("Integration1 FetchClasses")
 }

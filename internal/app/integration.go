@@ -1,4 +1,4 @@
-package interfaces
+package app
 
 import "net/url"
 
